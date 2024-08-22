@@ -1,0 +1,21 @@
+<h1>Add Plant to <%= @room.name %></h1>
+
+<div>
+  <%= form_with model: [@room, @plant] do |f| %>
+    <div>
+      <%= f.label :plant_type %>
+      <%= f.text_field :plant_type %>
+    </div>
+
+    <br>
+
+    <div>
+      <%= f.label :height %>
+      <%= f.text_field :height%>
+    </div>
+
+    <br>
+
+    <%= f.submit %>
+  <% end %>
+</div>
